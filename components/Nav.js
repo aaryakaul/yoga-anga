@@ -6,25 +6,35 @@ import { useRouter } from 'next/router';
 
 const Nav = () => {
   const router = useRouter();
-  const inputEl = useRef(null);
+
   const [activeItem, setActiveItem] = useState('');
+  const [activeLink, setActiveLink] = useState('');
+
   const handleItemClick = (e, { name }) => {
-    console.log('name', name);
-    e.preventDefault();
-    setActiveItem(name);
+    // setActiveItem(name);
+    // setActiveLink(name);
     if (name) {
       if (name === 'home') {
         router.push('/');
+        // setActiveItem('home');
       } else if (name === 'services') {
         router.push('/services');
+        // setActiveItem('services');
+      } else {
+        router.push('/gallery');
       }
     }
   };
 
+  // useEffect(() => {
+  //   console.log(activeLink);
+  //   setActiveItem(activeLink);
+  // }, [activeLink]);
+
   return (
     <div className='navbar'>
       <Menu secondary>
-        <Menu.Item>
+        <Menu.Item name='home' onClick={handleItemClick}>
           <Image src='/Logo.jpeg' width='95' height='60' />
         </Menu.Item>
         <Menu.Menu position='right' style={{ marginRight: 10 }}>

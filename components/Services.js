@@ -2,32 +2,13 @@ import React from 'react';
 import { Grid } from 'semantic-ui-react';
 import Image from 'next/image';
 import { Media } from '../lib/Media';
-import Head from 'next/head';
 import MobileService from './MobileService';
-const Footer = () => {
+import Footer from '../components/Footer';
+
+const Services = () => {
   return (
     <>
       <Media greaterThanOrEqual='customSizemobile'>
-        <Head>
-          <title>Create Next App</title>
-          <meta
-            name='description'
-            content='width=device-width,initial-scale=1.0'
-          />
-          <link rel='preconnect' href='https://fonts.googleapis.com' />
-          <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin />
-          <link
-            href='https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,100&display=swap'
-            rel='stylesheet'
-          />
-          <link
-            rel='stylesheet'
-            href='https://pro.fontawesome.com/releases/v5.10.0/css/all.css'
-            integrity='sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p'
-            crossOrigin='anonymous'
-          />
-        </Head>
-
         <div style={{ maxWidth: '1024px', margin: 'auto', paddingTop: 100 }}>
           <Grid columns='two' padded>
             <Grid.Row style={{ paddingTop: 0, paddingBottom: 0 }}>
@@ -670,8 +651,9 @@ const Footer = () => {
         </div>
       </Media>
       <MobileService />
+      <Footer />
     </>
   );
 };
 
-export default Footer;
+export default Services;

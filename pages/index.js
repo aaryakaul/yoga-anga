@@ -4,12 +4,13 @@ import Nav from '../components/Nav';
 import Link from 'next/link';
 import Image from 'next/image';
 import Head from 'next/head';
+import Footer from '../components/Footer';
 
 const Home = () => {
   return (
     <div>
       <Head>
-        <title>Create Next App</title>
+        <title>Yoga Anga</title>
         <meta
           name='description'
           content='width=device-width,initial-scale=1.0'
@@ -98,6 +99,7 @@ const Home = () => {
             </div>
           </div>
         </section>
+        <Footer />
       </Media>
       <Media lessThan='customSizeFormobile'>
         <Nav />
@@ -170,6 +172,7 @@ const Home = () => {
             </Grid.Row>
           </Grid>
         </div>
+        <Footer />
       </Media>
     </div>
   );
