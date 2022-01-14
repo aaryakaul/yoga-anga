@@ -51,14 +51,6 @@ function Gallery() {
           <div className='gallery-item'>
             <img
               className='gallery-image'
-              src='/galleryimage5.jpeg'
-              style={{ width: 'inherit', height: 'inherit' }}
-              alt='pregnancyyoga'
-            />
-          </div>
-          <div className='gallery-item'>
-            <img
-              className='gallery-image'
               src='/galleryimage6.jpeg'
               style={{ width: 'inherit', height: 'inherit' }}
               alt='pregnancyyoga'
