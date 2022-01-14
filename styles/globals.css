@@ -14,3 +14,108 @@ a {
 * {
   box-sizing: border-box;
 }
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  background: white;
+}
+
+.navbar .menu {
+  height: 60px !important;
+}
+
+.ui.secondary.menu {
+  box-shadow: 0 4px 20px 0 rgb(23 55 83 / 15%) !important;
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url('../public/feelgood.jpg');
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.services {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url('../public/yogaservices.jpg');
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.center {
+  margin: auto;
+  width: 90%;
+  padding: 20px;
+  box-shadow: 0 4px 20px 0 rgb(23 55 83 / 15%) !important;
+}
+
+.service-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 80%;
+  border: 3px solid #73ad21;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.text-box {
+  width: 75%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text-box h1 {
+  font-size: 62px;
+}
+
+.text-box p {
+  margin: 10px 0 40px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.about {
+  text-align: center;
+}
+
+.commonWidth {
+  width: 90%;
+  margin: auto;
+  padding-top: 100px;
+}
+
+.about-cols {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+  width: 90%;
+  padding: 20px;
+  box-shadow: 0 4px 20px 0 rgb(23 55 83 / 15%) !important;
+}
+
+.about-rows {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.aboutItem {
+  padding: 15px;
+  width: 100%;
+}
