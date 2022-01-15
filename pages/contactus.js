@@ -26,9 +26,7 @@ function contactus() {
           crossOrigin='anonymous'
         />
       </Head>
-      <div style={{ marginTop: '-50px' }}>
-        <Nav />
-      </div>
+      <Nav />
       <ContactUs />
       <Footer />
     </div>

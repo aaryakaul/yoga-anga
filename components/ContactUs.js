@@ -18,7 +18,7 @@ function ContactUs() {
                 <div class='screen-header-ellipsis'></div>
               </div>
             </div>
-            <div class='screen-body' style={{ marginBottom: '70px' }}>
+            <div class='screen-body'>
               <div class='screen-body-item left'>
                 <div class='app-title'>
                   <span>CONTACT US</span>
@@ -36,7 +36,7 @@ function ContactUs() {
                     Email Us
                   </a>
                   <div className='right box'>
-                    <div className='media-icons'>
+                    <div style={{ marginTop: '-21px' }} className='media-icons'>
                       <a
                         href='https://www.facebook.com/jinkal.thakkar'
                         target='_blank'

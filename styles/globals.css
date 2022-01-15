@@ -175,7 +175,7 @@ a {
   transition: all 0.3s ease;
 }
 .media-icons a:hover {
-  border-color: #eb2f06;
+  border-color: #eb2f06 !important;
 }
 
 footer a {
@@ -374,15 +374,9 @@ Remove or comment-out the code block below to see how the browser will fall-back
 }
 
 .container2 {
-  flex: 0 1 700px;
   margin: auto;
-  padding: 10px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  width: 95%;
+  width: 90%;
+  padding-top: 110px;
 }
 
 .screen {
