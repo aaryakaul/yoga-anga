@@ -1,11 +1,28 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-
+import { useRouter } from 'next/router';
+import useMobileDetect from 'use-mobile-detect-hook';
 function Footer() {
+  const detectMobile = useMobileDetect();
+  const router = useRouter();
+  console.log(router);
+
+  useEffect(() => {
+    if (router.pathname === '/contactus') {
+      if (typeof window !== undefined) {
+        var elmnt = document.getElementById('footer2');
+        var elmnt2 = document.getElementById('footer-media-icons');
+        elmnt.classList.add('footer-add-remove');
+        !detectMobile.isMobile() &&
+          elmnt2.classList.add('media-icons-add-remove');
+      }
+    }
+  });
+
   return (
     <div className='footer-width'>
-      <footer class='footer' style={{ paddingLeft: '10%' }}>
+      <footer class='footer' id='footer2' style={{ paddingLeft: '10%' }}>
         <div class='footer__addr'>
           <h1 class='footer__logo'>Yoga Anga</h1>
 
@@ -24,7 +41,7 @@ function Footer() {
               Email Us
             </a>
             <div className='right box'>
-              <div className='media-icons'>
+              <div className='media-icons' id='footer-media-icons'>
                 <a
                   href='https://www.facebook.com/jinkal.thakkar'
                   target='_blank'
@@ -44,12 +61,22 @@ function Footer() {
 
         <ul class='footer__nav'>
           <li class='nav__item nav__item--extra'>
-            <h2 class='nav__title'>Our Services</h2>
+            <h2 class='nav__title'>
+              {' '}
+              <Link href='/services'>
+                <a>Our Services </a>
+              </Link>
+            </h2>
 
             <ul class='nav__ul nav__ul--extra'>
               <li>
                 <Link href='/services'>
-                  <a>Online Yoga Classes</a>
+                  <a>Zumba</a>
+                </Link>
+              </li>
+              <li>
+                <Link href='/services'>
+                  <a>Online Yoga</a>
                 </Link>
               </li>
 
@@ -67,7 +94,7 @@ function Footer() {
 
               <li>
                 <Link href='/services'>
-                  <a>Private Yoga Classes</a>
+                  <a>Private Yoga</a>
                 </Link>
               </li>
 
@@ -103,7 +130,9 @@ function Footer() {
             <ul class='nav__ul'>
               <li>
                 <Link href='/'>
-                  <Image src='/Logo.jpeg' width='205' height='160' />
+                  <a>
+                    <Image src='/Logo.jpeg' width='205' height='160' />
+                  </a>
                 </Link>
               </li>
             </ul>

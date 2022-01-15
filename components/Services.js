@@ -9,7 +9,10 @@ const Services = () => {
   return (
     <>
       <Media greaterThanOrEqual='customSizemobile'>
-        <div style={{ maxWidth: '1024px', margin: 'auto', paddingTop: 100 }}>
+        <div
+          className='services-container'
+          style={{ maxWidth: '1024px', margin: 'auto', marginTop: 100 }}
+        >
           <Grid columns='two' padded>
             <Grid.Row style={{ paddingTop: 0, paddingBottom: 0 }}>
               <Grid.Column>

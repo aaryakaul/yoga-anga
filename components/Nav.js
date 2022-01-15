@@ -20,8 +20,10 @@ const Nav = () => {
       } else if (name === 'services') {
         router.push('/services');
         // setActiveItem('services');
-      } else {
+      } else if (name === 'gallery') {
         router.push('/gallery');
+      } else {
+        router.push('/contactus');
       }
     }
   };
@@ -51,6 +53,11 @@ const Nav = () => {
           <Menu.Item
             name='gallery'
             active={activeItem === 'gallery'}
+            onClick={handleItemClick}
+          />
+          <Menu.Item
+            name='contact us'
+            active={activeItem === 'contactus'}
             onClick={handleItemClick}
           />
         </Menu.Menu>
