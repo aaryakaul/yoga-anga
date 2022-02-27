@@ -54,57 +54,57 @@ function Footer() {
 
             <ul class='nav__ul nav__ul--extra'>
               <li>
-                <Link href='/services'>
+                <Link href='/services/zumba-yoga'>
                   <a>Zumba</a>
                 </Link>
               </li>
               <li>
-                <Link href='/services'>
+                <Link href='/services/online-yoga'>
                   <a>Online Yoga</a>
                 </Link>
               </li>
 
               <li>
-                <Link href='/services'>
+                <Link href='/services/beginners-yoga'>
                   <a>Yoga For beginners</a>
                 </Link>
               </li>
 
               <li>
-                <Link href='/services'>
+                <Link href='/services/hatha-yoga'>
                   <a>Hatha Yoga</a>
                 </Link>
               </li>
 
               <li>
-                <Link href='/services'>
+                <Link href='/services/private-yoga'>
                   <a>Private Yoga</a>
                 </Link>
               </li>
 
               <li>
-                <Link href='/services/'>
+                <Link href='/services/corporate-yoga'>
                   <a>Corporate Yoga</a>
                 </Link>
               </li>
 
               <li>
-                <Link href='/services'>
+                <Link href='/services/kids-yoga'>
                   <a>Kids yoga</a>
                 </Link>
               </li>
               <li>
-                <Link href='/services'>
+                <Link href='/services/pregnancy-yoga'>
                   <a>Pregnancy Yoga</a>
                 </Link>
               </li>
               <li>
-                <Link href='/services'>
+                <Link href='/services/meditation-yoga'>
                   <a>Meditation</a>
                 </Link>
               </li>
               <li>
-                <Link href='/services'>
+                <Link href='/services/pranayama-yoga'>
                   <a>Pranayama</a>
                 </Link>
               </li>

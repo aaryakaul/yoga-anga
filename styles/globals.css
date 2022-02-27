@@ -51,7 +51,7 @@ body {
 
 .mobile-center-testimonials {
   margin: auto;
-  max-width: 900px !important;
+  max-width: 940px !important;
   padding: 20px;
 }
 
@@ -87,7 +87,8 @@ body {
     max-width: 700px !important;
   }
   .mobile-center-testimonials {
-    max-width: 700px !important;
+    max-width: 720px !important;
+    padding: 5px;
   }
 }
 

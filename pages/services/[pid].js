@@ -358,7 +358,11 @@ function service() {
                 </p>
               </Grid.Column>
               <Grid.Column>
-                <img src='/yogaforbeginners.jpg' alt='yogaforbeginners' />
+                <img
+                  src='/yogaforbeginners.jpg'
+                  alt='yogaforbeginners'
+                  style={{ width: '100%' }}
+                />
               </Grid.Column>
             </Grid.Row>
           </Grid>
