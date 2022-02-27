@@ -134,7 +134,7 @@ function CustomNav() {
                 router.push('/services/corporate-yoga');
               }}
             >
-              <Icon name='home' />
+              <Icon name='try' />
               Corporate Yoga
             </Menu.Item>
             <Menu.Item
