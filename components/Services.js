@@ -1,11 +1,56 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Grid } from 'semantic-ui-react';
 import Image from 'next/image';
 import { Media } from '../lib/Media';
 import MobileService from './MobileService';
 import Footer from '../components/Footer';
+import { useRouter } from 'next/router';
 
 const Services = () => {
+  const router = useRouter();
+  const [didMount, setDidMount] = useState(false);
+
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides((slideIndex += n));
+  }
+
+  function currentSlide(n) {
+    showSlides((slideIndex = n));
+  }
+
+  useEffect(() => {
+    setDidMount(true);
+  }, []);
+
+  function showSlides(n) {
+    var i;
+    // var slides;
+    // var dots;
+    if (didMount) {
+      var slides = document.getElementsByClassName('mySlides');
+      var dots = document.getElementsByClassName('dot');
+    }
+
+    if (n > slides?.length) {
+      slideIndex = 1;
+    }
+    if (n < 1) {
+      slideIndex = slides?.length;
+    }
+    for (i = 0; i < slides?.length; i++) {
+      slides[i].style.display = 'none';
+    }
+    for (i = 0; i < dots?.length; i++) {
+      dots[i].className = dots[i].className.replace(' active', '');
+    }
+    if (slides && slides.length > 0 && dots && dots.length > 0) {
+      slides[slideIndex - 1].style.display = 'block';
+      dots[slideIndex - 1].className += ' active';
+    }
+  }
   return (
     <>
       <Media greaterThanOrEqual='customSizemobile'>
@@ -14,7 +59,10 @@ const Services = () => {
           style={{ maxWidth: '1024px', margin: 'auto', marginTop: 100 }}
         >
           <Grid columns='two' padded>
-            <Grid.Row style={{ paddingTop: 0, paddingBottom: 0 }}>
+            <Grid.Row
+              style={{ paddingTop: 0, paddingBottom: 0, cursor: 'pointer' }}
+              onClick={() => router.push('services/corporate-yoga')}
+            >
               <Grid.Column>
                 <Image src='/corporateyoga.jpeg' layout='fill' alt='aboutUs' />
               </Grid.Column>
@@ -46,7 +94,10 @@ const Services = () => {
             </Grid.Row>
           </Grid>
           <Grid columns='two' padded>
-            <Grid.Row style={{ paddingTop: 0, paddingBottom: 0 }}>
+            <Grid.Row
+              style={{ paddingTop: 0, paddingBottom: 0, cursor: 'pointer' }}
+              onClick={() => router.push('services/pregnancy-yoga')}
+            >
               <Grid.Column style={{ padding: 25 }}>
                 <h1 style={{ textAlign: 'left' }}>PREGNANCY YOGA</h1>
                 <p style={{ lineHeight: '1.6' }}>
@@ -81,7 +132,10 @@ const Services = () => {
             </Grid.Row>
           </Grid>
           <Grid columns='two' padded>
-            <Grid.Row style={{ paddingTop: 0, paddingBottom: 0 }}>
+            <Grid.Row
+              style={{ paddingTop: 0, paddingBottom: 0, cursor: 'pointer' }}
+              onClick={() => router.push('services/meditation-yoga')}
+            >
               <Grid.Column>
                 <Image src='/meditation.jpeg' layout='fill' alt='aboutUs' />
               </Grid.Column>
@@ -117,7 +171,10 @@ const Services = () => {
             </Grid.Row>
           </Grid>
           <Grid columns='two' padded>
-            <Grid.Row style={{ paddingTop: 0, paddingBottom: 0 }}>
+            <Grid.Row
+              style={{ paddingTop: 0, paddingBottom: 0, cursor: 'pointer' }}
+              onClick={() => router.push('services/hatha-yoga')}
+            >
               <Grid.Column style={{ padding: 25 }}>
                 <h1 style={{ textAlign: 'left' }}>HATHA YOGA</h1>
                 <p style={{ lineHeight: '1.6' }}>
@@ -141,7 +198,10 @@ const Services = () => {
             </Grid.Row>
           </Grid>
           <Grid columns='two' padded>
-            <Grid.Row style={{ paddingTop: 0, paddingBottom: 0 }}>
+            <Grid.Row
+              style={{ paddingTop: 0, paddingBottom: 0, cursor: 'pointer' }}
+              onClick={() => router.push('services/private-yoga')}
+            >
               <Grid.Column>
                 <Image
                   src='/privateyogaclasses.jpg'
@@ -184,7 +244,10 @@ const Services = () => {
             </Grid.Row>
           </Grid>
           <Grid columns='two' padded>
-            <Grid.Row style={{ paddingTop: 0, paddingBottom: 0 }}>
+            <Grid.Row
+              style={{ paddingTop: 0, paddingBottom: 0, cursor: 'pointer' }}
+              onClick={() => router.push('services/kids-yoga')}
+            >
               <Grid.Column style={{ padding: 25 }}>
                 <h1 style={{ textAlign: 'left' }}>KIDS YOGA</h1>
                 <p style={{ lineHeight: '1.6' }}>
@@ -217,7 +280,10 @@ const Services = () => {
             </Grid.Row>
           </Grid>
           <Grid columns='two' padded>
-            <Grid.Row style={{ paddingTop: 0, paddingBottom: 0 }}>
+            <Grid.Row
+              style={{ paddingTop: 0, paddingBottom: 0, cursor: 'pointer' }}
+              onClick={() => router.push('services/pranayama-yoga')}
+            >
               <Grid.Column>
                 <Image src='/pranayama.jpg' layout='fill' alt='aboutUs' />
               </Grid.Column>
@@ -247,7 +313,10 @@ const Services = () => {
             </Grid.Row>
           </Grid>
           <Grid columns='two' padded>
-            <Grid.Row style={{ paddingTop: 0, paddingBottom: 0 }}>
+            <Grid.Row
+              style={{ paddingTop: 0, paddingBottom: 0, cursor: 'pointer' }}
+              onClick={() => router.push('services/beginners-yoga')}
+            >
               <Grid.Column style={{ padding: 25 }}>
                 <h1 style={{ textAlign: 'left' }}>YOGA FOR BEGINNERS</h1>
                 <p style={{ lineHeight: '1.6' }}>
@@ -272,7 +341,10 @@ const Services = () => {
             </Grid.Row>
           </Grid>
           <Grid columns='two' padded>
-            <Grid.Row style={{ paddingTop: 0, paddingBottom: 0 }}>
+            <Grid.Row
+              style={{ paddingTop: 0, paddingBottom: 0, cursor: 'pointer' }}
+              onClick={() => router.push('services/online-yoga')}
+            >
               <Grid.Column>
                 <Image src='/onlineyoga.jpg' layout='fill' alt='aboutUs' />
               </Grid.Column>
@@ -295,7 +367,10 @@ const Services = () => {
             </Grid.Row>
           </Grid>
           <Grid columns='two' padded>
-            <Grid.Row style={{ paddingTop: 0, paddingBottom: 0 }}>
+            <Grid.Row
+              style={{ paddingTop: 0, paddingBottom: 0, cursor: 'pointer' }}
+              onClick={() => router.push('services/zumba-yoga')}
+            >
               <Grid.Column style={{ padding: 25 }}>
                 <h1 style={{ textAlign: 'left' }}>ZUMBA</h1>
                 <p style={{ lineHeight: '1.6' }}>
@@ -336,7 +411,10 @@ const Services = () => {
           style={{ marginLeft: '10px', marginRight: '10px', marginTop: 100 }}
         >
           <Grid columns='two' padded>
-            <Grid.Row style={{ paddingTop: 0, paddingBottom: 0 }}>
+            <Grid.Row
+              style={{ paddingTop: 0, paddingBottom: 0, cursor: 'pointer' }}
+              onClick={() => router.push('services/corporate-yoga')}
+            >
               <Grid.Column>
                 <Image src='/corporateyoga.jpeg' layout='fill' alt='aboutUs' />
               </Grid.Column>
@@ -368,7 +446,10 @@ const Services = () => {
             </Grid.Row>
           </Grid>
           <Grid columns='two' padded>
-            <Grid.Row style={{ paddingTop: 0, paddingBottom: 0 }}>
+            <Grid.Row
+              style={{ paddingTop: 0, paddingBottom: 0, cursor: 'pointer' }}
+              onClick={() => router.push('services/pregnancy-yoga')}
+            >
               <Grid.Column style={{ padding: 25 }}>
                 <h1 style={{ textAlign: 'left' }}>PREGNANCY YOGA</h1>
                 <p style={{ lineHeight: '1.6' }}>
@@ -403,7 +484,10 @@ const Services = () => {
             </Grid.Row>
           </Grid>
           <Grid columns='two' padded>
-            <Grid.Row style={{ paddingTop: 0, paddingBottom: 0 }}>
+            <Grid.Row
+              style={{ paddingTop: 0, paddingBottom: 0, cursor: 'pointer' }}
+              onClick={() => router.push('services/meditation-yoga')}
+            >
               <Grid.Column>
                 <Image src='/meditation.jpeg' layout='fill' alt='aboutUs' />
               </Grid.Column>
@@ -439,7 +523,10 @@ const Services = () => {
             </Grid.Row>
           </Grid>
           <Grid columns='two' padded>
-            <Grid.Row style={{ paddingTop: 0, paddingBottom: 0 }}>
+            <Grid.Row
+              style={{ paddingTop: 0, paddingBottom: 0, cursor: 'pointer' }}
+              onClick={() => router.push('services/hatha-yoga')}
+            >
               <Grid.Column style={{ padding: 25 }}>
                 <h1 style={{ textAlign: 'left' }}>HATHA YOGA</h1>
                 <p style={{ lineHeight: '1.6' }}>
@@ -463,7 +550,10 @@ const Services = () => {
             </Grid.Row>
           </Grid>
           <Grid columns='two' padded>
-            <Grid.Row style={{ paddingTop: 0, paddingBottom: 0 }}>
+            <Grid.Row
+              style={{ paddingTop: 0, paddingBottom: 0, cursor: 'pointer' }}
+              onClick={() => router.push('services/private-yoga')}
+            >
               <Grid.Column>
                 <Image
                   src='/privateyogaclasses.jpg'
@@ -506,7 +596,10 @@ const Services = () => {
             </Grid.Row>
           </Grid>
           <Grid columns='two' padded>
-            <Grid.Row style={{ paddingTop: 0, paddingBottom: 0 }}>
+            <Grid.Row
+              style={{ paddingTop: 0, paddingBottom: 0, cursor: 'pointer' }}
+              onClick={() => router.push('services/kids-yoga')}
+            >
               <Grid.Column style={{ padding: 25 }}>
                 <h1 style={{ textAlign: 'left' }}>KIDS YOGA</h1>
                 <p style={{ lineHeight: '1.6' }}>
@@ -539,7 +632,10 @@ const Services = () => {
             </Grid.Row>
           </Grid>
           <Grid columns='two' padded>
-            <Grid.Row style={{ paddingTop: 0, paddingBottom: 0 }}>
+            <Grid.Row
+              style={{ paddingTop: 0, paddingBottom: 0, cursor: 'pointer' }}
+              onClick={() => router.push('services/pranayama-yoga')}
+            >
               <Grid.Column>
                 <Image src='/pranayama.jpg' layout='fill' alt='aboutUs' />
               </Grid.Column>
@@ -569,7 +665,10 @@ const Services = () => {
             </Grid.Row>
           </Grid>
           <Grid columns='two' padded>
-            <Grid.Row style={{ paddingTop: 0, paddingBottom: 0 }}>
+            <Grid.Row
+              style={{ paddingTop: 0, paddingBottom: 0, cursor: 'pointer' }}
+              onClick={() => router.push('services/beginners-yoga')}
+            >
               <Grid.Column style={{ padding: 25 }}>
                 <h1 style={{ textAlign: 'left' }}>YOGA FOR BEGINNERS</h1>
                 <p style={{ lineHeight: '1.6' }}>
@@ -594,7 +693,10 @@ const Services = () => {
             </Grid.Row>
           </Grid>
           <Grid columns='two' padded>
-            <Grid.Row style={{ paddingTop: 0, paddingBottom: 0 }}>
+            <Grid.Row
+              style={{ paddingTop: 0, paddingBottom: 0, cursor: 'pointer' }}
+              onClick={() => router.push('services/online-yoga')}
+            >
               <Grid.Column>
                 <Image src='/onlineyoga.jpg' layout='fill' alt='aboutUs' />
               </Grid.Column>
@@ -617,7 +719,10 @@ const Services = () => {
             </Grid.Row>
           </Grid>
           <Grid columns='two' padded>
-            <Grid.Row style={{ paddingTop: 0, paddingBottom: 0 }}>
+            <Grid.Row
+              style={{ paddingTop: 0, paddingBottom: 0, cursor: 'pointer' }}
+              onClick={() => router.push('services/zumba-yoga')}
+            >
               <Grid.Column style={{ padding: 25 }}>
                 <h1 style={{ textAlign: 'left' }}>ZUMBA</h1>
                 <p style={{ lineHeight: '1.6' }}>
@@ -653,6 +758,89 @@ const Services = () => {
           </Grid>
         </div>
       </Media>
+      <div
+        className='about commonWidth'
+        style={{ marginTop: '10px', width: '67%' }}
+      >
+        <div class='slideshow-container'>
+          <div class='mySlides'>
+            <q>
+              Are you looking for best yoga class in Ahmedabad, just go for Yoga
+              Anga without a second thought as you will definitely love it.
+              Excellent place to transform your body towards healthy life.
+              Perfect ambience which will pull you to come daily. You will get
+              the professional guide for perfect yoga postures with personal
+              assistance.
+            </q>
+            <p class='author'>- Aarya Kaul Kachru</p>
+          </div>
+          <div class='mySlides'>
+            <q>
+              she knows work related work and how one can relax with yoga and
+              different meditation techniques .her teaching method is very good
+              . She is the best yoga teacher in the town
+            </q>
+            <p class='author'>- Joel Macwan</p>
+          </div>
+          <div class='mySlides'>
+            <q>
+              I recommend that you try out Jinkal ‘s classes. She’s highly
+              knowledgeable, inviting, compassionate, and has a sense of humor.
+              A true inclusive yoga experience regardless of your level. Can’t
+              wait to go again soon.
+            </q>
+            <p class='author'>- Aneri Patel</p>
+          </div>
+
+          <div class='mySlides'>
+            <q>
+              I enjoyed the every session and learned a lot from it. Iam very
+              much thankful for Jinkal mam.She teaches with heart and patience
+              that inspire me in learning yoga always teach variations of the
+              poses and explain what each pose is for, and even the spiritual
+              and energetic part of the poses. Every day practicing yoga it hlep
+              me so much with the lower back pain issues that i used to
+              have.Thank you for your support and love.
+            </q>
+            <p class='author'>- Barsa Debata</p>
+          </div>
+
+          <div class='mySlides'>
+            <q>
+              The yoga classes are excellent ! I have joined the online classes
+              and have seen increased flexibility throughout my body. Jinkal is
+              an excellent yoga teacher and I look forward every morning to join
+              her classes!
+            </q>
+            <p class='author'>- Neetin Solanki</p>
+          </div>
+          <div class='mySlides'>
+            <q>
+              I did pregnancy yoga through out my pregnancy with Yoga Anga. I
+              could not be more happier about my decision. Such personal
+              guidance and care . It was an amazing experience. I would
+              recommend Yoga Anga any day to everyone.
+            </q>
+            <p class='author'>- Bhoomi Patel</p>
+          </div>
+
+          <a class='prev' onClick={() => plusSlides(-1)}>
+            ❮
+          </a>
+          <a class='next' onClick={() => plusSlides(1)}>
+            ❯
+          </a>
+        </div>
+
+        <div class='dot-container'>
+          <span class='dot' onClick={() => currentSlide(1)}></span>
+          <span class='dot' onClick={() => currentSlide(2)}></span>
+          <span class='dot' onClick={() => currentSlide(3)}></span>
+          <span class='dot' onClick={() => currentSlide(4)}></span>
+          <span class='dot' onClick={() => currentSlide(5)}></span>
+          <span class='dot' onClick={() => currentSlide(6)}></span>
+        </div>
+      </div>
       <MobileService />
       <Footer />
     </>

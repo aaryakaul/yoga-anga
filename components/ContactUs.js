@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 function ContactUs() {
+  const [email, setEmail] = useState('');
+  const [contact, setContact] = useState('');
+  const [message, setMessage] = useState('');
   return (
     <div>
       <div class='background'>
@@ -56,16 +59,40 @@ function ContactUs() {
               <div class='screen-body-item'>
                 <div class='app-form'>
                   <div class='app-form-group'>
-                    <input class='app-form-control' placeholder='EMAIL' />
+                    <input
+                      class='app-form-control'
+                      placeholder='EMAIL'
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                    />
                   </div>
                   <div class='app-form-group'>
-                    <input class='app-form-control' placeholder='CONTACT NO' />
+                    <input
+                      class='app-form-control'
+                      placeholder='CONTACT NO'
+                      value={contact}
+                      onChange={(e) => setContact(e.target.value)}
+                    />
                   </div>
                   <div class='app-form-group message'>
-                    <input class='app-form-control' placeholder='MESSAGE' />
+                    <input
+                      class='app-form-control'
+                      placeholder='MESSAGE'
+                      value={message}
+                      onChange={(e) => setMessage(e.target.value)}
+                    />
                   </div>
                   <div class='app-form-group buttons'>
-                    <button class='app-form-button'>CANCEL</button>
+                    <button
+                      class='app-form-button'
+                      onClick={() => {
+                        setEmail('');
+                        setContact('');
+                        setMessage('');
+                      }}
+                    >
+                      CANCEL
+                    </button>
                     <button class='app-form-button'>SEND</button>
                   </div>
                 </div>

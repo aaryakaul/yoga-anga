@@ -2,6 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import Nav from '../components/Nav';
 import Gallery from '../components/Gallery';
+import CustomNav from '../components/CustomNav';
 
 function gallery() {
   return (
@@ -25,7 +26,7 @@ function gallery() {
           crossOrigin='anonymous'
         />
       </Head>
-      <Nav />
+      <CustomNav />
       <Gallery />
     </div>
   );

@@ -3,6 +3,7 @@ import Head from 'next/head';
 import ContactUs from '../components/ContactUs';
 import Footer from '../components/Footer';
 import Nav from '../components/Nav';
+import CustomNav from '../components/CustomNav';
 
 function contactus() {
   return (
@@ -26,7 +27,7 @@ function contactus() {
           crossOrigin='anonymous'
         />
       </Head>
-      <Nav />
+      <CustomNav />
       <ContactUs />
       <Footer />
     </div>

@@ -4,7 +4,7 @@ import Nav from '../components/Nav';
 import Link from 'next/link';
 import Head from 'next/head';
 import { Button, Icon, Grid } from 'semantic-ui-react';
-
+import CustomNav from '../components/CustomNav';
 function services() {
   return (
     <div>
@@ -27,7 +27,7 @@ function services() {
           crossOrigin='anonymous'
         />
       </Head>
-      <Nav />
+      <CustomNav />
       <section className='services'>
         <div className='text-box' style={{ paddingTop: '25px' }}>
           <h1>Stay in shape all year round</h1>

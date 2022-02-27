@@ -4,22 +4,6 @@ import Image from 'next/image';
 import { useRouter } from 'next/router';
 import useMobileDetect from 'use-mobile-detect-hook';
 function Footer() {
-  // const detectMobile = useMobileDetect();
-  // const router = useRouter();
-  // console.log(router);
-
-  // useEffect(() => {
-  //   if (router.pathname === '/contactus') {
-  //     if (typeof window !== undefined) {
-  //       var elmnt = document.getElementById('footer2');
-  //       var elmnt2 = document.getElementById('footer-media-icons');
-  //       elmnt.classList.add('footer-add-remove');
-  //       !detectMobile.isMobile() &&
-  //         elmnt2.classList.add('media-icons-add-remove');
-  //     }
-  //   }
-  // });
-
   return (
     <div className='footer-width'>
       <footer class='footer' id='footer2' style={{ paddingLeft: '10%' }}>
