@@ -46,6 +46,7 @@ function ContactUs() {
       setError('Please Fill In All The Details To Proceed');
     }
   };
+
   return (
     <div>
       <div class='background'>
@@ -156,18 +157,19 @@ function ContactUs() {
                       <p style={{ color: 'green' }}>Message Sent !!</p>
                     )}
                     <div class='app-form-group buttons'>
-                      <button
+                      <input
                         class='app-form-button'
+                        type='button'
+                        value='CANCEL'
                         onClick={() => {
+                          setError(null);
                           setEmail('');
                           setContact('');
                           setMessage('');
                           setName('');
                           setSubject('');
                         }}
-                      >
-                        CANCEL
-                      </button>
+                      />
                       <input
                         type='submit'
                         value='SEND'
