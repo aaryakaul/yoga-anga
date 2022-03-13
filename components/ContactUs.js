@@ -22,8 +22,12 @@ function ContactUs() {
           'ql0Di4zASFMNUMxfQ'
         )
         .then(
-          (result) => {
-            console.log(result.text);
+          () => {
+            setEmail('');
+            setContact('');
+            setMessage('');
+            setName('');
+            setSubject('');
           },
           (error) => {
             console.log(error.text);
