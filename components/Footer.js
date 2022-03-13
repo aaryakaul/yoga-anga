@@ -52,7 +52,7 @@ function Footer() {
               </Link>
             </h2>
 
-            <ul class='nav__ul nav__ul--extra'>
+            <ul class='nav__ul nav__ul--extra' style={{ width: 270 }}>
               <li>
                 <Link href='/services/zumba-yoga'>
                   <a>Zumba</a>
