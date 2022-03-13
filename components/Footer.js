@@ -66,7 +66,7 @@ function Footer() {
 
               <li>
                 <Link href='/services/beginners-yoga'>
-                  <a>Yoga For beginners</a>
+                  <a>Yoga For Beginners</a>
                 </Link>
               </li>
 
