@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import emailjs from 'emailjs-com';
 
 function ContactUs() {
@@ -8,7 +8,14 @@ function ContactUs() {
   const [message, setMessage] = useState('');
   const [subject, setSubject] = useState('');
   const [name, setName] = useState('');
+  const [messageSent, setMessageSent] = useState('');
   const [error, setError] = useState(null);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setMessageSent(false);
+    }, 3000);
+  }, [messageSent]);
 
   const handleSend = (e) => {
     e.preventDefault();
@@ -23,6 +30,7 @@ function ContactUs() {
         )
         .then(
           () => {
+            setMessageSent(true);
             setEmail('');
             setContact('');
             setMessage('');
@@ -30,6 +38,7 @@ function ContactUs() {
             setSubject('');
           },
           (error) => {
+            setError('Not able to send the mail');
             console.log(error.text);
           }
         );
@@ -143,6 +152,9 @@ function ContactUs() {
                       />
                     </div>
                     {error && <p style={{ color: 'red' }}>{error}</p>}
+                    {messageSent && (
+                      <p style={{ color: 'green' }}>Message Sent !!</p>
+                    )}
                     <div class='app-form-group buttons'>
                       <button
                         class='app-form-button'
