@@ -292,7 +292,7 @@ const Home = () => {
               </Grid.Column>
               <Grid.Column>
                 <img
-                  src='/aboutus2.jpeg'
+                  src='/homePage2Image.jpeg'
                   style={{ width: 'inherit' }}
                   alt='aboutUs'
                 />

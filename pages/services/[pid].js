@@ -79,7 +79,7 @@ function service() {
           <Grid divided='vertically'>
             <Grid.Row columns={1}>
               <Grid.Column>
-                <h1 style={{ textAlign: 'center' }}>Corporate Yoga</h1>
+                <h1 style={{ textAlign: 'center' }}>CORPORATE YOGA</h1>
                 <p style={{ lineHeight: '1.6' }}>
                   Yoga is not just about being able to perform complicated poses
                   and movements. It is a holistic approach to physical and

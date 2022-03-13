@@ -67,7 +67,7 @@ const Services = () => {
                 <Image src='/corporateyoga.jpeg' layout='fill' alt='aboutUs' />
               </Grid.Column>
               <Grid.Column style={{ padding: 25 }}>
-                <h1 style={{ textAlign: 'left' }}>Corporate Yoga</h1>
+                <h1 style={{ textAlign: 'left' }}>CORPORATE YOGA</h1>
                 <p style={{ lineHeight: '1.6' }}>
                   Yoga is not just about being able to perform complicated poses
                   and movements. It is a holistic approach to physical and
@@ -502,7 +502,7 @@ const Services = () => {
                 <Image src='/corporateyoga.jpeg' layout='fill' alt='aboutUs' />
               </Grid.Column>
               <Grid.Column style={{ padding: 25 }}>
-                <h1 style={{ textAlign: 'left' }}>Corporate Yoga</h1>
+                <h1 style={{ textAlign: 'left' }}>CORPORATE YOGA</h1>
                 <p style={{ lineHeight: '1.6' }}>
                   Yoga is not just about being able to perform complicated poses
                   and movements. It is a holistic approach to physical and
