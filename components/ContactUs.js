@@ -154,7 +154,7 @@ function ContactUs() {
                       </button>
                       <input
                         type='submit'
-                        value='Send'
+                        value='SEND'
                         class='app-form-button'
                       />
                     </div>
