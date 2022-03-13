@@ -445,7 +445,7 @@ function service() {
               the professional guide for perfect yoga postures with personal
               assistance.
             </q>
-            <p class='author'>- Aarya Kaul Kachru</p>
+            <p class='author'>- Ruhi Patel</p>
           </div>
           <div class='mySlides'>
             <q>
@@ -453,7 +453,7 @@ function service() {
               different meditation techniques .her teaching method is very good
               . She is the best yoga teacher in the town
             </q>
-            <p class='author'>- Joel Macwan</p>
+            <p class='author'>- Avni P.</p>
           </div>
           <div class='mySlides'>
             <q>
@@ -462,7 +462,7 @@ function service() {
               A true inclusive yoga experience regardless of your level. Can’t
               wait to go again soon.
             </q>
-            <p class='author'>- Aneri Patel</p>
+            <p class='author'>- Deepika parmar</p>
           </div>
 
           <div class='mySlides'>
@@ -475,7 +475,7 @@ function service() {
               me so much with the lower back pain issues that i used to
               have.Thank you for your support and love.
             </q>
-            <p class='author'>- Barsa Debata</p>
+            <p class='author'>- Shalini H.</p>
           </div>
 
           <div class='mySlides'>
@@ -485,7 +485,7 @@ function service() {
               an excellent yoga teacher and I look forward every morning to join
               her classes!
             </q>
-            <p class='author'>- Neetin Solanki</p>
+            <p class='author'>- Ravji Ahir</p>
           </div>
           <div class='mySlides'>
             <q>
@@ -494,7 +494,7 @@ function service() {
               guidance and care . It was an amazing experience. I would
               recommend Yoga Anga any day to everyone.
             </q>
-            <p class='author'>- Bhoomi Patel</p>
+            <p class='author'>- Saloni Parikh</p>
           </div>
 
           <a class='prev' onClick={() => plusSlides(-1)}>

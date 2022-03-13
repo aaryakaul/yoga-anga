@@ -18,7 +18,7 @@ function CustomNav() {
           style={{ marginTop: 5, cursor: 'pointer' }}
           onClick={() => router.push('/')}
         >
-          <Image src='/Logo.jpeg' width='95' height='60' />
+          <Image src='/Logo.jpeg' width='88' height='63' />
         </li>
         <li
           style={{ marginLeft: 'auto' }}
@@ -27,45 +27,43 @@ function CustomNav() {
         >
           Home
         </li>
-        <li className='navButtons'>
-          <Dropdown item simple text='Services'>
-            <Dropdown.Menu style={{ marginTop: '1px' }}>
-              <Link href='/services'>
-                <Dropdown.Item>All Services</Dropdown.Item>
-              </Link>
-              <Link href='/services/corporate-yoga'>
-                <Dropdown.Item>Corporate Yoga</Dropdown.Item>
-              </Link>
-              <Link href='/services/pregnancy-yoga'>
-                <Dropdown.Item>PREGNANCY YOGA</Dropdown.Item>
-              </Link>
-              <Link href='/services/meditation-yoga'>
-                <Dropdown.Item>MEDITATION</Dropdown.Item>
-              </Link>
-              <Link href='/services/hatha-yoga'>
-                <Dropdown.Item>HATHA YOGA</Dropdown.Item>
-              </Link>
-              <Link href='/services/private-yoga'>
-                <Dropdown.Item>PRIVATE YOGA CLASSES</Dropdown.Item>
-              </Link>
-              <Link href='/services/kids-yoga'>
-                <Dropdown.Item>KIDS YOGA</Dropdown.Item>
-              </Link>
-              <Link href='/services/pranayama-yoga'>
-                <Dropdown.Item>PRANAYAMA</Dropdown.Item>
-              </Link>
-              <Link href='/services/beginners-yoga'>
-                <Dropdown.Item>YOGA FOR BEGINNERS</Dropdown.Item>
-              </Link>
-              <Link href='/services/online-yoga'>
-                <Dropdown.Item>ONLINE YOGA CLASSES</Dropdown.Item>
-              </Link>
-              <Link href='/services/zumba-yoga'>
-                <Dropdown.Item>ZUMBA</Dropdown.Item>
-              </Link>
-            </Dropdown.Menu>
-          </Dropdown>
-        </li>
+        <Dropdown simple item text='Services' className='navButtons'>
+          <Dropdown.Menu style={{ marginTop: '1px' }}>
+            <Link href='/services'>
+              <Dropdown.Item>ALL SERVICES</Dropdown.Item>
+            </Link>
+            <Link href='/services/corporate-yoga'>
+              <Dropdown.Item>CORPORATE YOGA</Dropdown.Item>
+            </Link>
+            <Link href='/services/pregnancy-yoga'>
+              <Dropdown.Item>PREGNANCY YOGA</Dropdown.Item>
+            </Link>
+            <Link href='/services/meditation-yoga'>
+              <Dropdown.Item>MEDITATION</Dropdown.Item>
+            </Link>
+            <Link href='/services/hatha-yoga'>
+              <Dropdown.Item>HATHA YOGA</Dropdown.Item>
+            </Link>
+            <Link href='/services/private-yoga'>
+              <Dropdown.Item>PRIVATE YOGA CLASSES</Dropdown.Item>
+            </Link>
+            <Link href='/services/kids-yoga'>
+              <Dropdown.Item>KIDS YOGA</Dropdown.Item>
+            </Link>
+            <Link href='/services/pranayama-yoga'>
+              <Dropdown.Item>PRANAYAMA</Dropdown.Item>
+            </Link>
+            <Link href='/services/beginners-yoga'>
+              <Dropdown.Item>YOGA FOR BEGINNERS</Dropdown.Item>
+            </Link>
+            <Link href='/services/online-yoga'>
+              <Dropdown.Item>ONLINE YOGA CLASSES</Dropdown.Item>
+            </Link>
+            <Link href='/services/zumba-yoga'>
+              <Dropdown.Item>ZUMBA</Dropdown.Item>
+            </Link>
+          </Dropdown.Menu>
+        </Dropdown>
         <li className='navButtons' onClick={() => router.push('/gallery')}>
           Gallery
         </li>
@@ -105,7 +103,7 @@ function CustomNav() {
               as='a'
               onClick={() => setVisibleServices(!visibleServices)}
             >
-              <Icon name='cart' />
+              <Icon name='arrow circle right' />
               Services
             </Menu.Item>
             <Menu.Item as='a' onClick={() => router.push('/gallery')}>
@@ -129,102 +127,112 @@ function CustomNav() {
           >
             <Menu.Item
               as='a'
+              style={{ lineHeight: 2 }}
+              onClick={() => {
+                setVisibleServices(false);
+                router.push('/services/');
+              }}
+            >
+              ALL SERVICES
+            </Menu.Item>
+            <Menu.Item
+              as='a'
+              style={{ lineHeight: 2 }}
               onClick={() => {
                 setVisibleServices(false);
                 router.push('/services/corporate-yoga');
               }}
             >
-              <Icon name='try' />
-              Corporate Yoga
+              CORPORATE YOGA
             </Menu.Item>
             <Menu.Item
+              style={{ lineHeight: 2 }}
               as='a'
               onClick={() => {
                 setVisibleServices(false);
                 router.push('/services/pregnancy-yoga');
               }}
             >
-              <Icon name='try' />
               PREGNANCY YOGA
             </Menu.Item>
             <Menu.Item
+              style={{ lineHeight: 2 }}
               as='a'
               onClick={() => {
                 setVisibleServices(false);
                 router.push('/services/meditation-yoga');
               }}
             >
-              <Icon name='try' />
               MEDITATION
             </Menu.Item>
             <Menu.Item
+              style={{ lineHeight: 2 }}
               as='a'
               onClick={() => {
                 setVisibleServices(false);
                 router.push('/services/hatha-yoga');
               }}
             >
-              <Icon name='try' />
               HATHA YOGA
             </Menu.Item>
             <Menu.Item
+              style={{ lineHeight: 2 }}
               as='a'
               onClick={() => {
                 setVisibleServices(false);
                 router.push('/services/private-yoga');
               }}
             >
-              <Icon name='try' />
               PRIVATE YOGA CLASSES
             </Menu.Item>
             <Menu.Item
               as='a'
+              style={{ lineHeight: 2 }}
               onClick={() => {
                 setVisibleServices(false);
                 router.push('/services/kids-yoga');
               }}
             >
-              <Icon name='try' />
               KIDS YOGA
             </Menu.Item>
             <Menu.Item
+              style={{ lineHeight: 2 }}
               as='a'
               onClick={() => {
                 setVisibleServices(false);
                 router.push('/services/pranayama-yoga');
               }}
             >
-              <Icon name='try' />
               PRANAYAMA
             </Menu.Item>
             <Menu.Item
+              style={{ lineHeight: 2 }}
               as='a'
               onClick={() => {
                 setVisibleServices(false);
                 router.push('/services/beginners-yoga');
               }}
             >
-              <Icon name='try' />
               YOGA FOR BEGINNERS
             </Menu.Item>
             <Menu.Item
+              style={{ lineHeight: 2 }}
               as='a'
               onClick={() => {
                 setVisibleServices(false);
                 router.push('/services/online-yoga');
               }}
             >
-              <Icon name='try' />
               ONLINE YOGA CLASSES
             </Menu.Item>
             <Menu.Item
+              style={{ lineHeight: 2 }}
               as='a'
               onClick={() => {
                 setVisibleServices(false);
                 router.push('/services/zumba-yoga');
               }}
             >
-              <Icon name='try' />
               ZUMBA
             </Menu.Item>
           </Sidebar>

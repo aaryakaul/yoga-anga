@@ -117,8 +117,8 @@ const Home = () => {
               <div className='aboutItem'>
                 <Image
                   src='/aboutUs.jpeg'
-                  width='1060px'
-                  height='900px'
+                  width='420px'
+                  height='450px'
                   alt='aboutUs'
                 />
               </div>
@@ -126,9 +126,9 @@ const Home = () => {
             <div className='about-rows' style={{ marginTop: '50px' }}>
               <div className='aboutItem'>
                 <Image
-                  src='/aboutus2.jpeg'
-                  width='1060px'
-                  height='900px'
+                  src='/homePage2Image.jpeg'
+                  width='380px'
+                  height='420px'
                   alt='logo'
                 />
               </div>
@@ -158,7 +158,7 @@ const Home = () => {
                 the professional guide for perfect yoga postures with personal
                 assistance.
               </q>
-              <p class='author'>- Aarya Kaul Kachru</p>
+              <p class='author'>- Ruhi Patel</p>
             </div>
             <div class='mySlides'>
               <q>
@@ -166,7 +166,7 @@ const Home = () => {
                 different meditation techniques .her teaching method is very
                 good . She is the best yoga teacher in the town
               </q>
-              <p class='author'>- Joel Macwan</p>
+              <p class='author'>- Avni P.</p>
             </div>
             <div class='mySlides'>
               <q>
@@ -175,7 +175,7 @@ const Home = () => {
                 humor. A true inclusive yoga experience regardless of your
                 level. Can’t wait to go again soon.
               </q>
-              <p class='author'>- Aneri Patel</p>
+              <p class='author'>- Deepika parmar</p>
             </div>
 
             <div class='mySlides'>
@@ -188,7 +188,7 @@ const Home = () => {
                 hlep me so much with the lower back pain issues that i used to
                 have.Thank you for your support and love.
               </q>
-              <p class='author'>- Barsa Debata</p>
+              <p class='author'>- Shalini H.</p>
             </div>
 
             <div class='mySlides'>
@@ -198,7 +198,7 @@ const Home = () => {
                 Jinkal is an excellent yoga teacher and I look forward every
                 morning to join her classes!
               </q>
-              <p class='author'>- Neetin Solanki</p>
+              <p class='author'>- Ravji Ahir</p>
             </div>
             <div class='mySlides'>
               <q>
@@ -207,7 +207,7 @@ const Home = () => {
                 guidance and care . It was an amazing experience. I would
                 recommend Yoga Anga any day to everyone.
               </q>
-              <p class='author'>- Bhoomi Patel</p>
+              <p class='author'>- Saloni Parikh</p>
             </div>
 
             <a class='prev' onClick={() => plusSlides(-1)}>
@@ -314,7 +314,7 @@ const Home = () => {
                 the professional guide for perfect yoga postures with personal
                 assistance.
               </q>
-              <p class='author'>- Aarya Kaul Kachru</p>
+              <p class='author'>- Ruhi Patel</p>
             </div>
             <div class='mySlides'>
               <q>
@@ -322,7 +322,7 @@ const Home = () => {
                 different meditation techniques .her teaching method is very
                 good . She is the best yoga teacher in the town
               </q>
-              <p class='author'>- Joel Macwan</p>
+              <p class='author'>- Avni P.</p>
             </div>
             <div class='mySlides'>
               <q>
@@ -331,7 +331,7 @@ const Home = () => {
                 humor. A true inclusive yoga experience regardless of your
                 level. Can’t wait to go again soon.
               </q>
-              <p class='author'>- Aneri Patel</p>
+              <p class='author'>- Deepika parmar</p>
             </div>
 
             <div class='mySlides'>
@@ -344,7 +344,7 @@ const Home = () => {
                 hlep me so much with the lower back pain issues that i used to
                 have.Thank you for your support and love.
               </q>
-              <p class='author'>- Barsa Debata</p>
+              <p class='author'>- Shalini H.</p>
             </div>
 
             <div class='mySlides'>
@@ -354,7 +354,7 @@ const Home = () => {
                 Jinkal is an excellent yoga teacher and I look forward every
                 morning to join her classes!
               </q>
-              <p class='author'>- Neetin Solanki</p>
+              <p class='author'>- Ravji Ahir</p>
             </div>
             <div class='mySlides'>
               <q>
@@ -363,7 +363,7 @@ const Home = () => {
                 guidance and care . It was an amazing experience. I would
                 recommend Yoga Anga any day to everyone.
               </q>
-              <p class='author'>- Bhoomi Patel</p>
+              <p class='author'>- Saloni Parikh</p>
             </div>
 
             <a class='prev' onClick={() => plusSlides(-1)}>
