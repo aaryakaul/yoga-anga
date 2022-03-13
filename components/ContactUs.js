@@ -101,7 +101,7 @@ function ContactUs() {
                     <div class='app-form-group'>
                       <input
                         class='app-form-control'
-                        placeholder='SUBJECT'
+                        placeholder='EMAIL SUBJECT'
                         value={subject}
                         type='text'
                         name='subject'
@@ -111,7 +111,7 @@ function ContactUs() {
                     <div class='app-form-group'>
                       <input
                         class='app-form-control'
-                        placeholder='Name'
+                        placeholder='NAME'
                         value={name}
                         type='name'
                         name='name'
