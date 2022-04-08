@@ -3,6 +3,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif !important;
+  font-display: swap;
 }
 
 .navButtonsImage > span {
@@ -283,10 +284,10 @@ footer a:hover {
 }
 
 .footer__logo {
-  /* font-family: 'Pacifico', cursive; */
   font-weight: 400;
   font-size: 1.5rem;
   color: #4183c4;
+  font-display: swap;
 }
 
 .footer__addr h2 {
@@ -629,6 +630,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 16px;
   font-weight: normal;
+  font-display: swap;
 }
 
 .credits-link {
