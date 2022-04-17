@@ -43,11 +43,14 @@ body {
   align-items: center;
   margin-top: 0;
   box-shadow: 0 4px 20px 0 rgb(23 55 83 / 15%) !important;
-  height: 65px;
+  height: 80px;
 }
 
-.ui.visible.left.overlay.sidebar {
-  margin-top: 65px !important;
+.customSidebar.ui.visible.left.overlay.sidebar {
+  margin-top: 80px !important;
+}
+.customSidebar.ui.left.overlay.sidebar {
+  margin-top: 80px !important;
 }
 
 .ui.left.overlay.sidebar {
@@ -129,7 +132,7 @@ a {
   min-height: 100vh;
   width: 100%;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url('../public/feelgood.jpg');
+    url('../public/3d-female-yoga-pose-against-sunset-landscape.jpg');
   background-position: center;
   background-size: cover;
   position: relative;
@@ -140,7 +143,7 @@ a {
   min-height: 100vh;
   width: 100%;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url('../public/yogaservices.jpg');
+    url('../public/annie-spratt--l-eemJU0vE-unsplash.jpg');
   background-position: center;
   background-size: cover;
   position: relative;
@@ -422,48 +425,6 @@ footer a:hover {
   /* Compensate for excess margin on outer gallery flex items */
 }
 
-/* .gallery-item {
-  height: 90% !important; */
-/* Minimum width of 24rem and grow to fit available space */
-/* flex: 1 0 24rem; */
-/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
-
-/* box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
-  overflow: hidden;
-} */
-
-/* .gallery-image {
-  display: block;
-  width: 100% !important;
-  height: 100% !important;
-  transition: transform 400ms ease-out !important;
-}
-
-.gallery-image:hover {
-  transform: scale(1.15) !important;
-} */
-
-/*
-
-The following rule will only run if your browser supports CSS grid.
-
-Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
-
-*/
-
-/* @supports (display: grid) {
-  .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    grid-gap: 2rem;
-  }
-
-  .gallery,
-  .gallery-item {
-    margin: 0;
-  }
-} */
-
 .container2 {
   margin: auto;
   width: 90%;
@@ -595,7 +556,6 @@ Remove or comment-out the code block below to see how the browser will fall-back
   border-bottom: 1px solid #666;
   color: #ddd;
   font-size: 14px;
-  /* text-transform: uppercase; */
   outline: none;
   transition: border-color 0.2s;
 }

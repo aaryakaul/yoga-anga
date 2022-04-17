@@ -43,7 +43,7 @@ function MobileService() {
               </Grid.Column>
               <Grid.Column>
                 <img
-                  src='/corporateyoga.jpeg'
+                  src='/young-women-yoga-indoors-keep-calm-meditates-while-practicing-yoga-explore-inner-peace-yoga-meditation-have-good-benefits-health-photo-concept-yoga-sport-healthy-lifestyle.jpg'
                   style={{ width: 'inherit' }}
                   alt='aboutUs'
                 />
@@ -88,7 +88,7 @@ function MobileService() {
               </Grid.Column>
               <Grid.Column>
                 <img
-                  src='/pregnancy.jpeg'
+                  src='/pexels-freestocksorg-396133.jpg'
                   style={{ width: 'inherit' }}
                   alt='pregnancyyoga'
                 />
@@ -133,7 +133,10 @@ function MobileService() {
                 </p>
               </Grid.Column>
               <Grid.Column>
-                <img src='/meditation.jpeg' alt='meditationyoga' />
+                <img
+                  src='/pexels-felipe-borges-2597205.jpg'
+                  alt='meditationyoga'
+                />
               </Grid.Column>
             </Grid.Row>
           </Grid>
@@ -163,7 +166,7 @@ function MobileService() {
                 </p>
               </Grid.Column>
               <Grid.Column>
-                <img src='/hathyoga.jpeg' alt='hathyoga' />
+                <img src='/pexels-hong-son-4010069.jpg' alt='hathyoga' />
               </Grid.Column>
             </Grid.Row>
           </Grid>
@@ -208,7 +211,10 @@ function MobileService() {
                 </p>
               </Grid.Column>
               <Grid.Column>
-                <img src='/privateyogaclasses.jpg' alt='private' />
+                <img
+                  src='/yoga-practice-exercise-class-concept.jpg'
+                  alt='private'
+                />
               </Grid.Column>
             </Grid.Row>
           </Grid>
@@ -247,7 +253,7 @@ function MobileService() {
                 </p>
               </Grid.Column>
               <Grid.Column>
-                <img src='/kidsyoga.jpg' alt='kidsyoga' />
+                <img src='/pexels-yan-krukov-8613312.jpg' alt='kidsyoga' />
               </Grid.Column>
             </Grid.Row>
           </Grid>
@@ -283,7 +289,7 @@ function MobileService() {
                 </p>
               </Grid.Column>
               <Grid.Column>
-                <img src='/pranayama.jpg' alt='pranayama' />
+                <img src='/pexels-ivan-samkov-6648543.jpg' alt='pranayama' />
               </Grid.Column>
             </Grid.Row>
           </Grid>
@@ -310,7 +316,10 @@ function MobileService() {
                 </p>
               </Grid.Column>
               <Grid.Column>
-                <img src='/yogaforbeginners.jpg' alt='yogaforbeginners' />
+                <img
+                  src='/walking-with-rolled-up-yoga-matt.jpg'
+                  alt='yogaforbeginners'
+                />
               </Grid.Column>
             </Grid.Row>
           </Grid>
@@ -339,7 +348,7 @@ function MobileService() {
                 </p>
               </Grid.Column>
               <Grid.Column>
-                <img src='/onlineyoga.jpg' alt='onlineyoga' />
+                <img src='/pexels-marta-wave-6453398.jpg' alt='onlineyoga' />
               </Grid.Column>
             </Grid.Row>
           </Grid>
@@ -380,7 +389,10 @@ function MobileService() {
                 </p>
               </Grid.Column>
               <Grid.Column>
-                <img src='/zumba.jpg' alt='aboutUs' />
+                <img
+                  src='/pexels-andrea-piacquadio-3775566.jpg'
+                  alt='aboutUs'
+                />
               </Grid.Column>
             </Grid.Row>
           </Grid>

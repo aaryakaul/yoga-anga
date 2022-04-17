@@ -20,7 +20,11 @@ const Services = () => {
               onClick={() => router.push('services/corporate-yoga')}
             >
               <Grid.Column>
-                <Image src='/corporateyoga.jpeg' layout='fill' alt='aboutUs' />
+                <Image
+                  src='/young-women-yoga-indoors-keep-calm-meditates-while-practicing-yoga-explore-inner-peace-yoga-meditation-have-good-benefits-health-photo-concept-yoga-sport-healthy-lifestyle.jpg'
+                  layout='fill'
+                  alt='aboutUs'
+                />
               </Grid.Column>
               <Grid.Column style={{ padding: 25 }}>
                 <h1 style={{ textAlign: 'left' }}>CORPORATE YOGA</h1>
@@ -83,7 +87,11 @@ const Services = () => {
                 </p>
               </Grid.Column>
               <Grid.Column>
-                <Image src='/pregnancy.jpeg' layout='fill' alt='aboutUs' />
+                <Image
+                  src='/pexels-freestocksorg-396133.jpg'
+                  layout='fill'
+                  alt='aboutUs'
+                />
               </Grid.Column>
             </Grid.Row>
           </Grid>
@@ -93,7 +101,11 @@ const Services = () => {
               onClick={() => router.push('services/meditation-yoga')}
             >
               <Grid.Column>
-                <Image src='/meditation.jpeg' layout='fill' alt='aboutUs' />
+                <Image
+                  src='/pexels-felipe-borges-2597205.jpg'
+                  layout='fill'
+                  alt='aboutUs'
+                />
               </Grid.Column>
               <Grid.Column style={{ padding: 25 }}>
                 <h1 style={{ textAlign: 'left' }}>MEDITATION</h1>
@@ -149,7 +161,11 @@ const Services = () => {
                 </p>
               </Grid.Column>
               <Grid.Column>
-                <Image src='/hathyoga.jpeg' layout='fill' alt='aboutUs' />
+                <Image
+                  src='/pexels-hong-son-4010069.jpg'
+                  layout='fill'
+                  alt='aboutUs'
+                />
               </Grid.Column>
             </Grid.Row>
           </Grid>
@@ -160,7 +176,7 @@ const Services = () => {
             >
               <Grid.Column>
                 <Image
-                  src='/privateyogaclasses.jpg'
+                  src='/yoga-practice-exercise-class-concept.jpg'
                   layout='fill'
                   alt='aboutUs'
                 />
@@ -231,7 +247,11 @@ const Services = () => {
                 </p>
               </Grid.Column>
               <Grid.Column>
-                <Image src='/kidsyoga.jpg' layout='fill' alt='aboutUs' />
+                <Image
+                  src='/pexels-yan-krukov-8613312.jpg'
+                  layout='fill'
+                  alt='aboutUs'
+                />
               </Grid.Column>
             </Grid.Row>
           </Grid>
@@ -241,7 +261,11 @@ const Services = () => {
               onClick={() => router.push('services/pranayama-yoga')}
             >
               <Grid.Column>
-                <Image src='/pranayama.jpg' layout='fill' alt='aboutUs' />
+                <Image
+                  src='/pexels-ivan-samkov-6648543.jpg'
+                  layout='fill'
+                  alt='aboutUs'
+                />
               </Grid.Column>
               <Grid.Column style={{ padding: 25 }}>
                 <h1 style={{ textAlign: 'left' }}>PRANAYAMA</h1>
@@ -289,7 +313,7 @@ const Services = () => {
               </Grid.Column>
               <Grid.Column>
                 <Image
-                  src='/yogaforbeginners.jpg'
+                  src='/walking-with-rolled-up-yoga-matt.jpg'
                   layout='fill'
                   alt='aboutUs'
                 />
@@ -302,7 +326,11 @@ const Services = () => {
               onClick={() => router.push('services/online-yoga')}
             >
               <Grid.Column>
-                <Image src='/onlineyoga.jpg' layout='fill' alt='aboutUs' />
+                <Image
+                  src='/pexels-marta-wave-6453398.jpg'
+                  layout='fill'
+                  alt='aboutUs'
+                />
               </Grid.Column>
               <Grid.Column style={{ padding: 25 }}>
                 <h1 style={{ textAlign: 'left' }}>ONLINE YOGA CLASSES</h1>
@@ -356,7 +384,11 @@ const Services = () => {
                 </p>
               </Grid.Column>
               <Grid.Column>
-                <Image src='/zumba.jpg' layout='fill' alt='aboutUs' />
+                <Image
+                  src='/pexels-andrea-piacquadio-3775566.jpg'
+                  layout='fill'
+                  alt='aboutUs'
+                />
               </Grid.Column>
             </Grid.Row>
           </Grid>
@@ -372,7 +404,11 @@ const Services = () => {
               onClick={() => router.push('services/corporate-yoga')}
             >
               <Grid.Column>
-                <Image src='/corporateyoga.jpeg' layout='fill' alt='aboutUs' />
+                <Image
+                  src='/young-women-yoga-indoors-keep-calm-meditates-while-practicing-yoga-explore-inner-peace-yoga-meditation-have-good-benefits-health-photo-concept-yoga-sport-healthy-lifestyle.jpg'
+                  layout='fill'
+                  alt='aboutUs'
+                />
               </Grid.Column>
               <Grid.Column style={{ padding: 25 }}>
                 <h1 style={{ textAlign: 'left' }}>CORPORATE YOGA</h1>
@@ -435,7 +471,11 @@ const Services = () => {
                 </p>
               </Grid.Column>
               <Grid.Column>
-                <Image src='/pregnancy.jpeg' layout='fill' alt='aboutUs' />
+                <Image
+                  src='/pexels-freestocksorg-396133.jpg'
+                  layout='fill'
+                  alt='aboutUs'
+                />
               </Grid.Column>
             </Grid.Row>
           </Grid>
@@ -445,7 +485,11 @@ const Services = () => {
               onClick={() => router.push('services/meditation-yoga')}
             >
               <Grid.Column>
-                <Image src='/meditation.jpeg' layout='fill' alt='aboutUs' />
+                <Image
+                  src='/pexels-felipe-borges-2597205.jpg'
+                  layout='fill'
+                  alt='aboutUs'
+                />
               </Grid.Column>
               <Grid.Column style={{ padding: 25 }}>
                 <h1 style={{ textAlign: 'left' }}>MEDITATION</h1>
@@ -501,7 +545,11 @@ const Services = () => {
                 </p>
               </Grid.Column>
               <Grid.Column>
-                <Image src='/hathyoga.jpeg' layout='fill' alt='aboutUs' />
+                <Image
+                  src='/pexels-hong-son-4010069.jpg'
+                  layout='fill'
+                  alt='aboutUs'
+                />
               </Grid.Column>
             </Grid.Row>
           </Grid>
@@ -512,7 +560,7 @@ const Services = () => {
             >
               <Grid.Column>
                 <Image
-                  src='/privateyogaclasses.jpg'
+                  src='/yoga-practice-exercise-class-concept.jpg'
                   layout='fill'
                   alt='aboutUs'
                 />
@@ -583,7 +631,11 @@ const Services = () => {
                 </p>
               </Grid.Column>
               <Grid.Column>
-                <Image src='/kidsyoga.jpg' layout='fill' alt='aboutUs' />
+                <Image
+                  src='/pexels-yan-krukov-8613312.jpg'
+                  layout='fill'
+                  alt='aboutUs'
+                />
               </Grid.Column>
             </Grid.Row>
           </Grid>
@@ -593,7 +645,11 @@ const Services = () => {
               onClick={() => router.push('services/pranayama-yoga')}
             >
               <Grid.Column>
-                <Image src='/pranayama.jpg' layout='fill' alt='aboutUs' />
+                <Image
+                  src='/pexels-ivan-samkov-6648543.jpg'
+                  layout='fill'
+                  alt='aboutUs'
+                />
               </Grid.Column>
               <Grid.Column style={{ padding: 25 }}>
                 <h1 style={{ textAlign: 'left' }}>PRANAYAMA</h1>
@@ -641,7 +697,7 @@ const Services = () => {
               </Grid.Column>
               <Grid.Column>
                 <Image
-                  src='/yogaforbeginners.jpg'
+                  src='/walking-with-rolled-up-yoga-matt.jpg'
                   layout='fill'
                   alt='aboutUs'
                 />
@@ -654,7 +710,11 @@ const Services = () => {
               onClick={() => router.push('services/online-yoga')}
             >
               <Grid.Column>
-                <Image src='/onlineyoga.jpg' layout='fill' alt='aboutUs' />
+                <Image
+                  src='/pexels-marta-wave-6453398.jpg'
+                  layout='fill'
+                  alt='aboutUs'
+                />
               </Grid.Column>
               <Grid.Column style={{ padding: 25 }}>
                 <h1 style={{ textAlign: 'left' }}>ONLINE YOGA CLASSES</h1>
@@ -708,7 +768,11 @@ const Services = () => {
                 </p>
               </Grid.Column>
               <Grid.Column style={{ padding: '25px' }}>
-                <Image src='/zumba.jpg' layout='fill' alt='aboutUs' />
+                <Image
+                  src='/pexels-andrea-piacquadio-3775566.jpg'
+                  layout='fill'
+                  alt='aboutUs'
+                />
               </Grid.Column>
             </Grid.Row>
           </Grid>

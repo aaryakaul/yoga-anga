@@ -18,7 +18,7 @@ function CustomNav() {
           style={{ marginTop: 5, cursor: 'pointer' }}
           onClick={() => router.push('/')}
         >
-          <Image src='/Logo.jpeg' width='88' height='63' />
+          <Image src='/Logo.jpeg' width='75' height='75' />
         </li>
         <li
           style={{ marginLeft: 'auto' }}
@@ -94,6 +94,7 @@ function CustomNav() {
             vertical
             visible={visible}
             width='wide'
+            className='customSidebar'
           >
             <Menu.Item as='a' onClick={() => router.push('/')}>
               <Icon name='home' />
