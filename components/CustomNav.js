@@ -124,6 +124,7 @@ function CustomNav() {
             onHide={() => setVisibleServices(false)}
             vertical
             visible={visibleServices}
+            className='customSidebar'
             width='wide'
           >
             <Menu.Item
