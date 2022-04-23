@@ -21,7 +21,7 @@ const Services = () => {
             >
               <Grid.Column>
                 <Image
-                  src='/young-women-yoga-indoors-keep-calm-meditates-while-practicing-yoga-explore-inner-peace-yoga-meditation-have-good-benefits-health-photo-concept-yoga-sport-healthy-lifestyle.jpg'
+                  src='/ladies-stretch-circle.jpg'
                   layout='fill'
                   alt='aboutUs'
                 />
@@ -102,7 +102,7 @@ const Services = () => {
             >
               <Grid.Column>
                 <Image
-                  src='/pexels-felipe-borges-2597205.jpg'
+                  src='/young-women-yoga-indoors-keep-calm-meditates-while-practicing-yoga-explore-inner-peace-yoga-meditation-have-good-benefits-health-photo-concept-yoga-sport-healthy-lifestyle.jpg'
                   layout='fill'
                   alt='aboutUs'
                 />
@@ -176,7 +176,7 @@ const Services = () => {
             >
               <Grid.Column>
                 <Image
-                  src='/yoga-practice-exercise-class-concept.jpg'
+                  src='/luna-active-fitness-O3AA1XfKofM-unsplash.jpg'
                   layout='fill'
                   alt='aboutUs'
                 />
@@ -262,7 +262,7 @@ const Services = () => {
             >
               <Grid.Column>
                 <Image
-                  src='/pexels-ivan-samkov-6648543.jpg'
+                  src='/servicesPranayama.jpg'
                   layout='fill'
                   alt='aboutUs'
                 />
@@ -405,7 +405,7 @@ const Services = () => {
             >
               <Grid.Column>
                 <Image
-                  src='/young-women-yoga-indoors-keep-calm-meditates-while-practicing-yoga-explore-inner-peace-yoga-meditation-have-good-benefits-health-photo-concept-yoga-sport-healthy-lifestyle.jpg'
+                  src='/ladies-stretch-circle.jpg'
                   layout='fill'
                   alt='aboutUs'
                 />
@@ -486,7 +486,7 @@ const Services = () => {
             >
               <Grid.Column>
                 <Image
-                  src='/pexels-felipe-borges-2597205.jpg'
+                  src='/young-women-yoga-indoors-keep-calm-meditates-while-practicing-yoga-explore-inner-peace-yoga-meditation-have-good-benefits-health-photo-concept-yoga-sport-healthy-lifestyle.jpg'
                   layout='fill'
                   alt='aboutUs'
                 />
@@ -560,7 +560,7 @@ const Services = () => {
             >
               <Grid.Column>
                 <Image
-                  src='/yoga-practice-exercise-class-concept.jpg'
+                  src='/luna-active-fitness-O3AA1XfKofM-unsplash.jpg'
                   layout='fill'
                   alt='aboutUs'
                 />
@@ -646,7 +646,7 @@ const Services = () => {
             >
               <Grid.Column>
                 <Image
-                  src='/pexels-ivan-samkov-6648543.jpg'
+                  src='/servicesPranayama.jpg'
                   layout='fill'
                   alt='aboutUs'
                 />

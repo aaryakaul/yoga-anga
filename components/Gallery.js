@@ -40,7 +40,7 @@ function Gallery() {
                 <Image src='/galleryImage74.jpeg' />
               </Grid.Column>
               <Grid.Column style={{ padding: '15px' }}>
-                <Image src='/galleryImage76.jpeg' />
+                <Image src='/lastImage.jpeg' />
               </Grid.Column>
               <Grid.Column style={{ padding: '15px' }}>
                 <Image src='/galleryImage77.jpeg' />
@@ -82,7 +82,7 @@ function Gallery() {
                 <Image src='/galleryImage74.jpeg' />
               </Grid.Column>
               <Grid.Column style={{ padding: '15px' }}>
-                <Image src='/galleryImage76.jpeg' />
+                <Image src='/lastImage.jpeg' />
               </Grid.Column>
               <Grid.Column style={{ padding: '15px' }}>
                 <Image src='/galleryImage77.jpeg' />
@@ -124,7 +124,7 @@ function Gallery() {
                 <Image src='/galleryImage74.jpeg' />
               </Grid.Column>
               <Grid.Column style={{ padding: '15px' }}>
-                <Image src='/galleryImage76.jpeg' />
+                <Image src='/lastImage.jpeg' />
               </Grid.Column>
               <Grid.Column style={{ padding: '15px' }}>
                 <Image src='/galleryImage77.jpeg' />

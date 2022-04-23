@@ -50,9 +50,9 @@ const Home = () => {
               </div>
               <div className='aboutItem'>
                 <Image
-                  src='/aboutUs.jpeg'
-                  width='420px'
-                  height='450px'
+                  src='/dashboardImage1.jpeg'
+                  width='450px'
+                  height='360px'
                   alt='aboutUs'
                 />
               </div>
@@ -60,9 +60,9 @@ const Home = () => {
             <div className='about-rows' style={{ marginTop: '50px' }}>
               <div className='aboutItem'>
                 <Image
-                  src='/homePage2Image.jpeg'
-                  width='380px'
-                  height='420px'
+                  src='/dashboardImage2.jpeg'
+                  width='450px'
+                  height='360px'
                   alt='logo'
                 />
               </div>

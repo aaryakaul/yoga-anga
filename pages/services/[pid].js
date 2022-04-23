@@ -43,7 +43,7 @@ function service() {
               </Grid.Column>
               <Grid.Column>
                 <img
-                  src='/young-women-yoga-indoors-keep-calm-meditates-while-practicing-yoga-explore-inner-peace-yoga-meditation-have-good-benefits-health-photo-concept-yoga-sport-healthy-lifestyle.jpg'
+                  src='/ladies-stretch-circle.jpg'
                   style={{ width: 'inherit' }}
                   alt='aboutUs'
                 />
@@ -130,7 +130,7 @@ function service() {
               </Grid.Column>
               <Grid.Column>
                 <img
-                  src='/pexels-felipe-borges-2597205.jpg'
+                  src='/young-women-yoga-indoors-keep-calm-meditates-while-practicing-yoga-explore-inner-peace-yoga-meditation-have-good-benefits-health-photo-concept-yoga-sport-healthy-lifestyle.jpg'
                   alt='meditationyoga'
                 />
               </Grid.Column>
@@ -204,7 +204,7 @@ function service() {
               </Grid.Column>
               <Grid.Column>
                 <img
-                  src='/yoga-practice-exercise-class-concept.jpg'
+                  src='/luna-active-fitness-O3AA1XfKofM-unsplash.jpg'
                   alt='private'
                 />
               </Grid.Column>
@@ -277,7 +277,7 @@ function service() {
                 </p>
               </Grid.Column>
               <Grid.Column>
-                <img src='/pexels-ivan-samkov-6648543.jpg' alt='pranayama' />
+                <img src='/servicesPranayama.jpg' alt='pranayama' />
               </Grid.Column>
             </Grid.Row>
           </Grid>
