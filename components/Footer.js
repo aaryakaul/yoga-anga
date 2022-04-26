@@ -6,9 +6,9 @@ import useMobileDetect from 'use-mobile-detect-hook';
 function Footer() {
   return (
     <div className='footer-width'>
-      <footer class='footer' id='footer2' style={{ paddingLeft: '10%' }}>
-        <div class='footer__addr'>
-          <h1 class='footer__logo'>Yoga Anga</h1>
+      <footer className='footer' id='footer2' style={{ paddingLeft: '10%' }}>
+        <div className='footer__addr'>
+          <h1 className='footer__logo'>Yoga Anga</h1>
 
           <h2>Contact</h2>
 
@@ -21,7 +21,7 @@ function Footer() {
               +91 84016854567
             </a>
             <br />
-            <a class='footer__btn' href='mailto: jinkal2796@gmail.com'>
+            <a className='footer__btn' href='mailto: jinkal2796@gmail.com'>
               Email Us
             </a>
             <div className='right box'>
@@ -43,16 +43,16 @@ function Footer() {
           </address>
         </div>
 
-        <ul class='footer__nav'>
-          <li class='nav__item nav__item--extra'>
-            <h2 class='nav__title'>
+        <ul className='footer__nav'>
+          <li className='nav__item nav__item--extra'>
+            <h2 className='nav__title'>
               {' '}
               <Link href='/services'>
                 <a>Our Services </a>
               </Link>
             </h2>
 
-            <ul class='nav__ul nav__ul--extra' style={{ width: 270 }}>
+            <ul className='nav__ul nav__ul--extra' style={{ width: 270 }}>
               <li>
                 <Link href='/services/zumba-yoga'>
                   <a>Zumba</a>
@@ -110,8 +110,8 @@ function Footer() {
               </li>
             </ul>
           </li>
-          <li class='nav__item'>
-            <ul class='nav__ul'>
+          <li className='nav__item'>
+            <ul className='nav__ul'>
               <li>
                 <Link href='/'>
                   <a>

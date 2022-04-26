@@ -49,24 +49,24 @@ function ContactUs() {
 
   return (
     <div>
-      <div class='background'>
-        <div class='container2'>
-          <div class='screen'>
-            <div class='screen-header'>
-              <div class='screen-header-left'>
-                <div class='screen-header-button close'></div>
-                <div class='screen-header-button maximize'></div>
-                <div class='screen-header-button minimize'></div>
+      <div className='background'>
+        <div className='container2'>
+          <div className='screen'>
+            <div className='screen-header'>
+              <div className='screen-header-left'>
+                <div className='screen-header-button close'></div>
+                <div className='screen-header-button maximize'></div>
+                <div className='screen-header-button minimize'></div>
               </div>
-              <div class='screen-header-right'>
-                <div class='screen-header-ellipsis'></div>
-                <div class='screen-header-ellipsis'></div>
-                <div class='screen-header-ellipsis'></div>
+              <div className='screen-header-right'>
+                <div className='screen-header-ellipsis'></div>
+                <div className='screen-header-ellipsis'></div>
+                <div className='screen-header-ellipsis'></div>
               </div>
             </div>
-            <div class='screen-body'>
-              <div class='screen-body-item left'>
-                <div class='app-title'>
+            <div className='screen-body'>
+              <div className='screen-body-item left'>
+                <div className='app-title'>
                   <span>CONTACT US</span>
                 </div>
                 <div style={{ marginTop: '50px' }}>
@@ -78,7 +78,10 @@ function ContactUs() {
                     +91 84016854567
                   </a>
                   <br />
-                  <a class='footer__btn' href='mailto: jinkal2796@gmail.com'>
+                  <a
+                    className='footer__btn'
+                    href='mailto: jinkal2796@gmail.com'
+                  >
                     Email Us
                   </a>
                   <div className='right box'>
@@ -99,12 +102,12 @@ function ContactUs() {
                   </div>
                 </div>
               </div>
-              <div class='screen-body-item'>
-                <div class='app-form'>
+              <div className='screen-body-item'>
+                <div className='app-form'>
                   <form ref={form} onSubmit={handleSend}>
-                    <div class='app-form-group'>
+                    <div className='app-form-group'>
                       <input
-                        class='app-form-control'
+                        className='app-form-control'
                         placeholder='EMAIL'
                         value={email}
                         type='email'
@@ -112,9 +115,9 @@ function ContactUs() {
                         onChange={(e) => setEmail(e.target.value)}
                       />
                     </div>
-                    <div class='app-form-group'>
+                    <div className='app-form-group'>
                       <input
-                        class='app-form-control'
+                        className='app-form-control'
                         placeholder='EMAIL SUBJECT'
                         value={subject}
                         type='text'
@@ -122,9 +125,9 @@ function ContactUs() {
                         onChange={(e) => setSubject(e.target.value)}
                       />
                     </div>
-                    <div class='app-form-group'>
+                    <div className='app-form-group'>
                       <input
-                        class='app-form-control'
+                        className='app-form-control'
                         placeholder='NAME'
                         value={name}
                         type='name'
@@ -132,9 +135,9 @@ function ContactUs() {
                         onChange={(e) => setName(e.target.value)}
                       />
                     </div>
-                    <div class='app-form-group'>
+                    <div className='app-form-group'>
                       <input
-                        class='app-form-control'
+                        className='app-form-control'
                         placeholder='CONTACT NO'
                         value={contact}
                         type='number'
@@ -142,9 +145,9 @@ function ContactUs() {
                         onChange={(e) => setContact(e.target.value)}
                       />
                     </div>
-                    <div class='app-form-group message'>
+                    <div className='app-form-group message'>
                       <input
-                        class='app-form-control'
+                        className='app-form-control'
                         placeholder='MESSAGE'
                         value={message}
                         type='text'
@@ -156,9 +159,9 @@ function ContactUs() {
                     {messageSent && (
                       <p style={{ color: 'green' }}>Message Sent !!</p>
                     )}
-                    <div class='app-form-group buttons'>
+                    <div className='app-form-group buttons'>
                       <input
-                        class='app-form-button'
+                        className='app-form-button'
                         type='button'
                         value='CANCEL'
                         onClick={() => {
@@ -173,7 +176,7 @@ function ContactUs() {
                       <input
                         type='submit'
                         value='SEND'
-                        class='app-form-button'
+                        className='app-form-button'
                       />
                     </div>
                   </form>
